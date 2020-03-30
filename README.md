@@ -26,7 +26,7 @@ public class HsfTestController {
 }
 
 ```
-2、item-api工程总的SubjectService, hsf consumer注解的会自动生成hsf consumer 容器中去
+2、item-api工程总的SubjectService, ProxyConsumer注解的会自动注册hsf consumer bean到spring 容器中去
 ```java
 @ProxyConsumer(beanId = "subjectService", version = "${ITEM_VERSION}", group = "${ITEM_GROUP}", clientTimeout = 60000)
 public interface SubjectService {
