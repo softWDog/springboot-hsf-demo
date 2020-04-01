@@ -180,7 +180,7 @@ public class HsfFileUtils {
 
     private static void extractConsumerList() {
         try {
-            List<String> consumerList = extractAnnotationClazzes(ProxyConsumer.class, "classpath*:com/chinaunicom/**/*.class");
+            List<String> consumerList = extractAnnotationClazzes(ProxyConsumer.class, "classpath*:com/*/**/*.class");
             for (String consumer : consumerList) {
                 CONSUMERS.add(new RemoteConsumer(Class.forName(consumer)));
             }

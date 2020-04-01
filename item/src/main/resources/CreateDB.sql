@@ -29,4 +29,4 @@ INSERT INTO subject VALUES
   (1, 'chinese', 10, 100, 45),
   (2, 'math', 10, NULL, 45),
   (3, 'english', 10, NULL, NULL),
-  (4, 'other', 10, NULL, NULL);
+  (3, 'other', 10, NULL, NULL);
